@@ -18,7 +18,7 @@ Prueba IBM Juan Callejas Duque.
       </li>
       <li>
         <h3>1.2 Instalación:</h3>
-        <p>Configuración de servidor embebido y detalles de <a link="https://spring.io/blog/2014/03/07/deploying-spring-boot-applications">despligue</a>.</p>
+        <p>Configuración de servidor embebido y detalles de <a href="https://spring.io/blog/2014/03/07/deploying-spring-boot-applications">despligue</a>.</p>
     </ul>
   </li>
   
