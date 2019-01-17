@@ -28,13 +28,10 @@ public class ClientController {
 	ClientService clientService;
 	
 	@RequestMapping(value="/client")
-	public ResponseEntity<List<Client>> getClient() {
+	public ResponseEntity<List<Client>> getClientList() {
 		final HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		List<Client> clientList = clientService.getAllClients();
-		for(Client client : clientList){
-			System.out.println("+++"+client.getFullName());
-		}
 		return new ResponseEntity<List<Client>>(clientList, headers, HttpStatus.CREATED);
 	}
 	

@@ -1,0 +1,21 @@
+
+.menu-avatar {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background: center center no-repeat;
+        background-image: none;
+        background-size: auto auto;
+        background-color: transparent !important;
+    background-size: auto 25px;
+    border-radius: 25px;    
+    z-index: 999;
+  }
+  .menu-avatar img {
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+    display: inline-block;
+    position: relative;
+    z-index: 998;
+  }
