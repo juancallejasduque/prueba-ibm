@@ -18,7 +18,7 @@ Prueba IBM Juan Callejas Duque.
       </li>
       <li>
         <h3>1.2 Instalación:</h3>
-        <p>Configuración de servidor embebido y detalles de <a href="https://spring.io/blog/2014/03/07/deploying-spring-boot-applications">despligue</a>.Lo que básicamente se genera es un JAR el cual cuenta con una versión embebida el servidor TOMCAT.</p>
+        <p>Configuración de servidor embebido y detalles de <a href="https://spring.io/blog/2014/03/07/deploying-spring-boot-applications">despligue</a>.Para la implemetación se uso la ayuda de IDE Spring Tool Suite el cual ofrece las facilidades para generar básicamente un JAR el cual cuenta con una versión embebida el servidor TOMCAT.</p>
     </ul>
   </li>
   <li>
