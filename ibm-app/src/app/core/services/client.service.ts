@@ -28,6 +28,7 @@ export class ClientService {
   }
 
   getClientLinks(): Observable<any> {
+    console.log(AppConfig.Api.PAGE);
     return this.http.get(AppConfig.Api.PAGE).pipe(
       map(this.extractData));
   }

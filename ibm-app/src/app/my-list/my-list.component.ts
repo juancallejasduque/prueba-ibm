@@ -15,10 +15,19 @@ export class MyListComponent implements OnInit {
   clientList;
 
   constructor(private clientService: ClientService) { 
-    this.clientList = this.clientService.getClientLinks;
+    
   }
 
   ngOnInit() {
+    this.getClients();
+  }
+
+  getClients() {
+    this.clientList = [];
+    this.clientService.getClientLinks().subscribe((data: {}) => {
+      console.log(data);
+      this.clientList = data;
+    });
   }
 
 }
