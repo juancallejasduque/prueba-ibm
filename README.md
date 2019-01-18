@@ -36,6 +36,7 @@ Prueba IBM Juan Callejas Duque.
       </li>
       <li>
         <h3>1.2 Instalación:</h3>
+        <p>Se genera una directorio en /dist que contiene la salida o versión producción de la aplicación con el HTML y javascript correspondiente, para el desarrollo se usó el servidor <a href="https://nodejs.org/en/docs/guides/">Node JS</a>.
       </li>
     </ul>
   </li>
