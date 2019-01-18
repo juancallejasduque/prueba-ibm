@@ -28,33 +28,33 @@ export class ClientService {
   }
 
   getClientLinks(): Observable<any> {
-    console.log(AppConfig.Api.PAGE);
-    return this.http.get(AppConfig.Api.PAGE).pipe(
+    console.log(AppConfig.API_URL+AppConfig.PAGE_CLIENT);
+    return this.http.get(AppConfig.PAGE_CLIENT).pipe(
       map(this.extractData));
   }
 
   getClientLink(id): Observable<any> {
-    return this.http.get(AppConfig.Api.PAGE_CRUD + id).pipe(
+    return this.http.get(AppConfig.API_URL+AppConfig.PAGE_CLIENT_CRUD + id).pipe(
       map(this.extractData));
   }
 
   addClientLink (client): Observable<any> {
     console.log(client);
-    return this.http.post<any>(AppConfig.Api.PAGE, JSON.stringify(client), httpOptions).pipe(
+    return this.http.post<any>(AppConfig.API_URL+AppConfig.PAGE_CLIENT, JSON.stringify(client), httpOptions).pipe(
       tap((Client) => console.log('added ClientLink w/ id=${product.id}')),
       catchError(this.handleError<any>('addProduct'))
     );
   }
 
   updateClientLink (id, client): Observable<any> {
-    return this.http.put(AppConfig.Api.PAGE_CRUD + id, JSON.stringify(client), httpOptions).pipe(
+    return this.http.put(AppConfig.API_URL+AppConfig.PAGE_CLIENT_CRUD + id, JSON.stringify(client), httpOptions).pipe(
       tap(_ => console.log(`updated ClientLink id=${id}`)),
       catchError(this.handleError<any>('updateProduct'))
     );
   }
 
   deleteClientLink (id): Observable<any> {
-    return this.http.delete<any>(AppConfig.Api.PAGE_CRUD + id, httpOptions).pipe(
+    return this.http.delete<any>(AppConfig.API_URL+AppConfig.PAGE_CLIENT_CRUD + id, httpOptions).pipe(
       tap(_ => console.log(`deleted ClientLink id=${id}`)),
       catchError(this.handleError<any>('deleteProduct'))
     );
