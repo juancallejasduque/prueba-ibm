@@ -37,6 +37,8 @@ Prueba IBM Juan Callejas Duque.
       <li>
         <h3>1.2 Instalación:</h3>
         <p>Se genera una directorio en /dist que contiene la salida o versión producción de la aplicación con el HTML y javascript correspondiente, para el desarrollo se usó el servidor <a href="https://nodejs.org/en/docs/guides/">Node JS</a>.
+        </p>
+        <p>La aplicación tiene configurada la URI de la API que provee los datos, por defecto tiene "http://localhost:8080" en caso de requerir cambiarlo debe editar el archivo "/src/app/configs/app-config.ts", luego volver a generar el archivo de salida con el comando <code> ng build --prod </code>
       </li>
     </ul>
   </li>
